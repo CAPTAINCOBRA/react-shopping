@@ -132,6 +132,8 @@ export default (state = initialState, action) => {
     return {
       products: updatedProducts,
       totalAmount: updatedTotalAmount,
+      allProducts: state.allProducts,
+      displayProducts: state.displayProducts,
     };
   }
   if (action.type === REMOVE_PRODUCT) {
@@ -157,6 +159,8 @@ export default (state = initialState, action) => {
     return {
       products: updatedProducts,
       totalAmount: updatedTotalAmount,
+      allProducts: state.allProducts,
+      displayProducts: state.displayProducts,
     };
   }
   if (action.type === "SET_SEARCH_TERM") {

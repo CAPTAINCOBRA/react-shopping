@@ -8,7 +8,7 @@ const AvailableProducts = () => {
   const { allProducts, displayProducts } = stateData;
   console.log("allProducts", allProducts);
 
-  const productsList = allProducts.map((Product) => (
+  const productsList = allProducts?.map((Product) => (
     <ProductItem
       key={Product.id}
       id={Product.id}
